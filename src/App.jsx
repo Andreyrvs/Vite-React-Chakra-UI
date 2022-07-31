@@ -1,13 +1,17 @@
 // import { useState } from 'react'
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import Form from './components/Form';
+import ToggleButton from './components/ToggleButton';
 
 function App() {
   return (
-    <Box bgColor="gray.100" w="full" h="full">
+    <Flex justifyContent="center" alignItems="center" h="2xl">
+      <Box alignSelf="flex-start">
+        <ToggleButton />
+      </Box>
       <Form />
-    </Box>
+    </Flex>
   );
 }
 
