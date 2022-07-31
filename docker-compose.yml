@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  dev:
+    build: .
+    # Nome do container para facilitar execução
+    container_name: vite_react
+    # Mesmo que `docker run -t`
+    tty: true
+    # Mesmo que `docker run -i`
+    stdin_open: true
+    # Substitui o comando padrão da imagem do node
+    command: bash
+    # Restarta a imagem caso algo a faça parar
+    restart: always
+    # Diretório padrão de execução
+    volumes:
+    - ./:/app
+    ports:
+    - 3000:3000
+
+networks:
+  default:
+    name: vite_react_net

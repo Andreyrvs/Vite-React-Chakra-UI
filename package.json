@@ -1,0 +1,19 @@
+{
+  "name": "vite-react-chakra-ui",
+  "version": "1.0.0",
+  "description": "## Contexto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andreyrvs/Vite-React-Chakra-UI.git"
+  },
+  "author": "Andrey Rannerson Visniewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andreyrvs/Vite-React-Chakra-UI/issues"
+  },
+  "homepage": "https://github.com/Andreyrvs/Vite-React-Chakra-UI#readme"
+}
