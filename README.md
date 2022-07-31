@@ -44,9 +44,9 @@ Front-end:
 
 * Para rodar o front-end:
 
-```bash
+<!-- ```bash
   cd Vite-React-Chakra-UI && npm start
-```
+``` -->
 
 <!-- ## Executando Testes
 
