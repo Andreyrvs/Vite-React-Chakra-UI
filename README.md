@@ -16,9 +16,9 @@ Front-end:
 
 * clone o projeto:
 
-  ```bash
-  git clone git@github.com:Andreyrvs/Vite-React-Chakra-UI.git
-  ```
+ ```bash
+ git clone git@github.com:Andreyrvs/Vite-React-Chakra-UI.git
+ ```
 
 <!-- > Backend
 
