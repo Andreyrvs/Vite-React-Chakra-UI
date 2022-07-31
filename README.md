@@ -1,8 +1,11 @@
-# Estudando Vite React com Chakra UI
+# Estudando ViteJs com Chakra UI
+
+| ![l](./images/light.png) | ![D](./images/dark.png) |
+| --- | --- |
 
 ## Contexto
 
-Este projeto trata-se de uma ??????????.
+Aprendendo a Usar Vite e Chakra Ui
 
 ## Técnologias usadas
 
@@ -44,9 +47,9 @@ Front-end:
 
 * Para rodar o front-end:
 
-<!-- ```bash
-  cd Vite-React-Chakra-UI && npm start
-``` -->
+```bash
+  npm run dev
+```
 
 <!-- ## Executando Testes
 
