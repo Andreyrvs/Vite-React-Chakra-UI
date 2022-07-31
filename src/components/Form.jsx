@@ -7,6 +7,8 @@ import {
   Input,
   Flex,
   Box,
+  useColorModeValue,
+  Button,
 } from '@chakra-ui/react';
 import { EmailIcon, StarIcon } from '@chakra-ui/icons';
 
@@ -19,14 +21,18 @@ function Form() {
   const isError = input === '';
   const isErrorPassword = inputPassword === '';
 
+  const bgColor = useColorModeValue('gray.200', 'gray.700');
+
   return (
-    <Flex flexDirection="column" alignItems="center" justifyContent="center">
-      <Box w="sm" m="10" boxShadow="2xl" rounded="md" bg="white" p="7">
+    <Flex>
+      <Box w="sm" m="10" boxShadow="2xl" rounded="md" bg={bgColor} p="7">
         <FormControl isInvalid={isError}>
-          <FormLabel>Email</FormLabel>
+          <FormLabel display="flex" alignItems="center">
+            <EmailIcon color="teal" w={5} h={5} p={1} />
+            Email
+          </FormLabel>
           <Flex flexDirection="column">
             <Flex flexDirection="row">
-              <EmailIcon color="teal" w={10} h={10} p={2} />
               <Input
                 type="email"
                 value={input}
@@ -44,10 +50,12 @@ function Form() {
                 )}
             </Box>
           </Flex>
-          <FormLabel>Password</FormLabel>
+          <FormLabel display="flex" alignItems="center">
+            <StarIcon color="teal" w={5} h={5} p={1} />
+            Password
+          </FormLabel>
           <Flex flexDirection="column">
             <Flex lexDirection="row">
-              <StarIcon color="teal" w={10} h={10} p={2} />
               <Input
                 type="password"
                 value={inputPassword}
@@ -64,6 +72,9 @@ function Form() {
                   <FormErrorMessage>Password is require.</FormErrorMessage>
                 )}
             </Box>
+          </Flex>
+          <Flex justifyContent="center" mt={4}>
+            <Button colorScheme="teal" size="lg" width="100%">Login</Button>
           </Flex>
         </FormControl>
       </Box>
