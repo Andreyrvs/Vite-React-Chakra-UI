@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Andreyrvs/Vite-React-Chakra-UI#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
