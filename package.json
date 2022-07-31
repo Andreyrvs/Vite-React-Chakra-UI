@@ -1,10 +1,12 @@
 {
-  "name": "vite-react-chakra-ui",
-  "version": "1.0.0",
-  "description": "## Contexto",
-  "main": "index.js",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/Andreyrvs/Vite-React-Chakra-UI/issues"
   },
-  "homepage": "https://github.com/Andreyrvs/Vite-React-Chakra-UI#readme"
+  "homepage": "https://github.com/Andreyrvs/Vite-React-Chakra-UI#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "vite": "^3.0.0"
+  }
 }
